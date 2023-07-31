@@ -1,0 +1,511 @@
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    border:0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'MrsEavesItalic';
+    src: url("../fonts/MrsEavesItalic.ttf");
+}
+
+@font-face {
+    font-family: 'Segoe WP Semibold';
+    src: url("../fonts/Segoe WP Semibold.ttf");
+}
+@font-face {
+    font-family: 'Segoe WP N Light';
+    src: url("../fonts/Segoe WP N Light.ttf");
+}
+@font-face {
+    font-family: 'Univers CE 45 Light';
+    src: url("../fonts/Univers CE 45 Light.ttf");
+}
+body {
+    background-color: #FFFF;
+    font-family: 'Segoe WP Semibold', sans-serif;
+    color:white;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+span, button {
+    font-family: 'Segoe WP N Light', sans-serif;
+}
+
+/*HEADER HERE*/
+
+.main {
+    background: url('../images/background.png') no-repeat top center;
+    background-size: 100%;
+    padding-top: 56px;
+    height: 560px;
+}
+
+.header .container {
+    display: flex;
+    flex-direction: row;
+}
+
+.logo {
+    font-family: 'MrsEavesItalic', sans-serif;
+    font-size: 118px;
+    color: #c4ced1;
+    vertical-align: bottom;
+    margin-left: 85px;
+}
+
+.menu {
+    margin-left: 188px;
+}
+
+.menu-list {
+    list-style: none;
+    display: flex;
+}
+
+.menu-item {
+    margin-right: 52px;
+}
+
+.menu-item a {
+    font-family: 'Segoe WP N Light', sans-serif;
+    font-size: 22px;
+    text-decoration:none;
+    color: #949a9a;
+    outline: none;
+}
+
+.menu-item a:hover {
+    color: #b3b9b9;
+    border-bottom: solid 1px #b3b9b9;
+}
+
+.inner-text  {
+    vertical-align: top;
+    margin: 40px 77px;
+    max-width: 335px;
+}
+
+.inner-text h1  {
+    font-size: 64px;
+}
+
+.inner-text span {
+    font-size: 44px;
+}
+
+.inner-button {
+    margin-top: 34px;
+}
+
+.inner-button button {
+    font-size: 22px;
+    padding: 5px 25px;
+    background: #2c7652;
+    color: white;
+    border: 4px solid rgba(52, 60, 55, 1);
+    box-sizing: border-box;
+    outline: none;
+    cursor: pointer;
+}
+
+.inner-button button:hover {
+    background: #41ad78;
+    color: #4b4b4b;
+    transition: ease 0.5s;
+}
+
+/*SLIDER HERE*/
+
+.slider {
+    position: relative;
+    padding-top: 67px;
+    z-index: 1;
+}
+
+.slider-btns {
+    position: relative;
+    top: 50%;
+}
+
+.next {
+    position: absolute;
+    background: url("../images/arrow-next.png") no-repeat;
+    width: 50px;
+    height: 50px;
+    right: 13%;
+    transform: translateY(145%);
+}
+
+.prev {
+    position: absolute;
+    background: url("../images/arrow-prev.png") no-repeat;
+    width: 50px;
+    height: 50px;
+    left: 13%;
+    transform: translateY(145%);
+}
+
+ .prev:hover, .next:hover {
+    border-radius: 50%;
+    box-shadow: 0 0 10px 1px;
+    transition: ease 0.5s;
+ }
+
+
+.slick-slider-item .inner_img {
+    margin-left: 115px;
+}
+
+.slick-slider-item .inner_img, .slick-slider-item .inner-text {
+    display: inline-block;
+}
+
+/*TABS HERE*/
+
+.main-tabs {
+    font-family: 'Segoe WP N Light', sans-serif;
+    color:#5f5f5f;
+    background-color: white;
+    width: 100%;
+}
+
+.main-tabs .container {
+    margin-top: 56px;
+}
+
+.ui-tabs-nav {
+    display: flex;
+}
+
+.ui-tabs-tab {
+    list-style: none;
+    flex: 0 1 25%;
+}
+
+
+.ui-tabs .ui-tabs-nav {
+    background: white;
+    border: none;
+}
+
+.ui-tabs .ui-tabs-nav li {
+    list-style: none;
+    float: left;
+    position: relative;
+    top: 0;
+    margin: 1px 0.2em 0 0;
+    border-bottom-width: 0;
+    padding: 0;
+    white-space: nowrap;
+    border: none;
+    background-color: white;
+}
+
+.container .ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+    padding: 0 11px;
+}
+
+.ui-widget-header {
+     background: white;
+}
+
+.container .ui-widget.ui-widget-content {
+    border: none;
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-active {
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 4px #dedede;
+    /*border: 2px solid #dddddd;*/
+    border-bottom: none;
+}
+.ui-state-default {
+    background-color: transparent;
+}
+
+.tabs__item:hover {
+    border: dotted 1px #bbb9b9;
+}
+
+.tabs__logo {
+    margin-left: 20%;
+    max-height: 150px;
+}
+
+.tabs__logo_img {
+    position: relative;
+    bottom: 118px;
+    left: 20%;
+}
+
+.right_logo {
+    position: relative;
+    bottom: 120px;
+    left: 15%;
+}
+
+.last_logo {
+    position: relative;
+    bottom: 115px;
+    left: 15%;
+}
+
+.tabs__title {
+    color: #5f5f5f;
+    font-size: 26px;
+    width: 155px;
+    text-align: center;
+    margin-top: 28px;
+    width: 100%;
+}
+
+.tabs__title span {
+    font-size: 22px;
+}
+
+.tabs__block {
+    padding: 0 55px;
+    font-size: 22px;
+    line-height: 24px;
+    background-color: white;
+    box-shadow: 0 0 4px #dedede;
+    padding-bottom: 68px;
+}
+
+.tabs__block.ui-tabs-panel {
+    border-top: 1px solid #dddddd;
+
+}
+
+.tabs__block img {
+    margin: 58px 185px;
+}
+
+.tabs__block_title {
+    font-size: 38px;
+}
+
+.tabs__block_text p {
+    font-family: 'Univers CE 45 Light', sans-serif ;
+    font-size: 14px;
+    margin-top: 38px;
+}
+
+/*WHY BLOCK HERE*/
+
+.why {
+    color: #4f4f4f;
+    border-bottom: 1px solid #e5e5e5;
+    padding-top: 30px;
+    padding-bottom: 75px;
+}
+
+.why .container {
+    display: flex;
+}
+
+.why img {
+    width: 50%;
+    height: 100%;
+    max-width: 452px;
+}
+
+.why-list {
+    margin-left: 56px;
+}
+
+.why-list-title {
+    font-family: 'Segoe WP N Light', sans-serif;
+    font-size: 32px;
+    margin: 16px 0 30px 0;
+}
+
+.why-list {
+    font-family: 'Univers CE 45 Light', sans-serif ;
+    font-size: 16px;
+}
+
+.why-list li {
+    margin-bottom: 15px;
+    list-style: none;
+    background: url(../images/list-item.png) no-repeat 0 4px;
+    height: 22px;
+    padding-left: 30px;
+}
+
+/*FORMS HERE*/
+
+.forms {
+    font-family: 'Segoe WP N Light', sans-serif;
+    padding-top: 25px;
+    padding-bottom: 35px;
+    font-size: 16px;
+}
+
+.form__items {
+    display: flex;
+}
+
+.form__item_login, .form__items_subscribe {
+    flex: 0 1 50%;
+}
+
+.form__item_login {
+    background-color: #e67624;
+}
+
+.form__item_subscribe {
+    background-color: #01d4f3;
+}
+
+.form__title {
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.form__item_login, .form__item_subscribe {
+    padding: 20px 30px;
+    margin-right: 70px;
+    border-radius: 9px;
+    min-width: 470px;
+    max-width: 470px;
+}
+
+.form__item_login input, .form__item_subscribe input {
+    margin-right: 15px;
+    background-color: #e8e8e8;
+    padding: 7px 10px;
+}
+
+.form__item_login input {
+    max-width: 36%;
+}
+
+.form__item_subscribe input {
+    margin-right: 35px;
+    width: 65%;
+}
+
+.form__item_login button, .form__item_subscribe button {
+    padding: 7px 8px;
+    background-color: #444444;
+    color: #f3f3f3;
+    cursor: pointer;
+}
+
+.form__item_subscribe button {
+    padding: 7px 25px;
+}
+
+.form__item_subscribe button {
+    background-color: #029bb1;
+}
+
+.form__item_login button:hover, .form__item_subscribe button:hover {
+    opacity: .8;
+}
+
+/*FOOTER*/
+
+.footer {
+    background-color: #2a2c28;
+    padding-top: 35px;
+}
+
+.footer__items {
+    display: flex;
+    align-items: stretch;
+    padding:0 45px;
+    padding-bottom: 38px;
+}
+
+.footer__item {
+    flex: 0 1 24%;
+}
+
+.footer__item:nth-child(3) {
+    width: 318px;
+    padding: 0 5px;
+}
+
+.footer__item_title {
+    font-family: 'Segoe WP N Light', sans-serif;
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-wrap: normal;
+}
+
+.footer__item_list, .footer__copyrite {
+    font-family: 'Arial', sans-serif;
+    font-size: 13px;
+    list-style: none;
+    color: #959397;
+    line-height: 22px;
+}
+
+.footer__item_list li  {
+    margin-bottom: 12px;
+}
+.footer__item_list li a {
+    text-decoration: none;
+    color: #969592;
+}
+
+.footer__item_text {
+    margin-top: 15px;
+    font-family: 'Arial Bold', sans-serif;
+    font-size: 13px;
+    line-height: 22px;
+}
+
+.footer__item_slider.slick-slider {
+    display: contents;
+}
+
+.footer .logo {
+    color: #565c55;
+    margin: 0;
+    /*margin:20px 0 0 0;*/
+}
+
+.footer__item_logo {
+    margin-left: 45px;
+}
+
+.footer__copyrite {
+    color: white;
+}
+
+.footer .slick-prev, .footer .slick-next {
+    position: sticky;
+}
+
+.footer .slick-prev::before, .footer .slick-next::before {
+    color: #515652;
+
+}
+
+.footer .slick-prev::before {
+    position: relative;
+    bottom: 1.6em;
+    left: 9em;
+}
+
+.footer .slick-next::before {
+    position: absolute;
+    bottom: 11.1em;
+    left: 10.3em;
+}
